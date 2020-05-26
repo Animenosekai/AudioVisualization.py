@@ -1,6 +1,6 @@
 def wavelength_to_rgb(wavelength, gamma=0.8):
-
-    '''This converts a given wavelength of light to an 
+    '''
+    This converts a given wavelength of light to an 
     approximate RGB color value. The wavelength must be given
     in nanometers in the range from 380 nm through 750 nm
     (789 THz through 400 THz).
@@ -43,7 +43,4 @@ def wavelength_to_rgb(wavelength, gamma=0.8):
     R *= 255
     G *= 255
     B *= 255
-    return (int(R), int(G), int(B))
-
-something = 0.25+450
-print(wavelength_to_rgb(something))
+    return [int(R), int(G), int(B)]
